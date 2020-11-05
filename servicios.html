@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Detail</title>
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <script src="js/servicios.js"></script>
+    <script src="js/navegacion.js"></script>
+</head>
+<body>
+    <article class="servicios">
+            
+        <label>Filtrar por Servicio: <input type="text" id="input-filtro"></label>
+        <button id="btn-filtrar">Filtrar</button>
+
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Sercicios</th>
+                    <th>Detalles</th>
+                    <th>Costo</th>
+                </tr>
+            </thead>
+            <tbody id="body_tabla"></tbody>
+        </table>
+
+        <section id="input_tabla">
+            <label>Ingrese Servicio: <input type="text" id="input_servicio"></label>
+            <label>Ingrese Etapas: <input type="text" id="input_etapa"></label>
+            <label>Ingrese Precio: <input type="number" id="input_precio"></label>
+        </section>
+
+        <button id="btn-agregar-tabla">Agregar</button>
+        <button id="btn-agregar-tres">Agregar 3 Elementos</button>
+
+        <ol id="lista_servicios">
+            <li>Limpieza y Desinfección del interior del Vehículo</li>
+            <li>Pulido en 1 Etapa</li>
+            <li>Pulido en 2 Etapas</li>
+            <li>Pulido en 3 Etapas</li>
+            <li>Sin Sellado</li>
+            <li>Sellado Acrílico</li>
+            <li>Sellado Céramico</li>
+            <li>Sin Protección</li>
+            <li>Protección de 6 meses</li>
+            <li>Protección de 3 años</li>
+            <li>Nutrido de Plasticos y Cuero</li>
+            <li>Siliconado de Alfombras y Burletes</li>
+        </ol>
+
+        <footer>Garage Detail</footer>
+    </article>
+</body>
+</html>

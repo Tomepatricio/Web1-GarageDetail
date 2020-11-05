@@ -1,0 +1,232 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(../images/fondo.jpg);
+}
+
+.logo_box {
+    display: flex;
+    justify-content: center;
+    color: orange;
+    text-decoration: orangered underline;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: transparent;
+    color: orange;
+    border: none;
+    font-size: 20px;
+}
+
+.visible {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+#navegacion button {
+    padding: 4px;
+    text-decoration: none;
+    color: orange;
+    background-color:transparent;
+    border:none;
+}
+
+#navegacion button:hover {
+    font-size: 140%;
+    color: orangered;
+}
+
+.oculta {
+    display: none;
+}
+
+footer {
+    color:white;
+    background-color: orangered;
+    border-radius: 5%;
+}
+
+/*INDEX*/
+.index {
+    font-size: 12px;
+}
+
+.reseña {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.formulario {
+    text-align: center;
+}
+
+.formulario p{
+    color: white;
+    margin: 5px;
+    text-align: center;
+}
+
+.redes_sociales p{
+    color: white;
+}
+
+.redes_sociales img{
+    width: 5%;
+    border-radius: 20%;
+}
+
+/*SERVICIOS*/
+
+.servicios {
+    font-size: 12px;
+    color: white;
+}
+
+.servicios button {
+    font-size: 10px;
+}
+
+.oculta2 {
+    display: none;
+}
+
+.tabla {
+    color:white;
+}
+
+.tabla th{
+    background-color: orangered;
+}
+
+#input_tabla{
+    display: flex;
+    flex-direction: column;
+}
+
+#input_tabla label{
+    color: white;
+}
+
+.tabla td {
+    border: solid orange 1px;
+    padding: 10px;
+}
+
+#lista_servicios {
+    color: white;
+}
+
+.resaltado {
+    background-color: orangered;
+}
+
+.resultFiltro{
+    color:orange;
+    font-size: 30px;
+}
+
+.editar{
+    background-color: yellowgreen;
+}
+
+.borrar{
+    background-color: tomato;
+}
+
+.borrando{
+    color: orange;
+    font-size: 30px;
+}
+
+/* GALERIA */
+#titulo {
+    display: flex;
+    justify-content: center;
+    color:white;
+    text-decoration: underline orangered;
+}
+
+.galeria {
+    font-size: 12px;
+}
+
+.contenedor_galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contenedor_galeria .images {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.contenedor_galeria .images img{
+    width: 40%;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.contenedor_galeria .description{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    color: white;
+}
+
+header {grid-area: head;}
+    .reseña {grid-area:reseña;}
+    .formulario {grid-area:form;}
+    .redes_sociales {grid-area:redes;}
+    .oculta {grid-area: nav;}
+    footer {grid-area:foot;}
+
+
+@media only screen and (min-width: 1000px) {
+    
+    #navegacion{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /*HOME*/
+    
+    .home {
+        display: grid;
+        font-size: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "head head"
+                            "nav nav"
+                            "reseña form"
+                            "redes ."
+                            "foot foot";
+    }
+
+    .reseña {
+        text-align: left;
+    }
+
+    /*SERVICIOS*/
+    .servicios {
+        font-size: 20px;
+    }
+
+    .servicios button {
+        font-size: 15px;
+    }
+
+    /*GALERIA*/
+    .galeria {
+        font-size: 20px;
+    }
+}
